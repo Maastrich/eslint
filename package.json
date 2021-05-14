@@ -1,5 +1,5 @@
 {
-  "name": "@myplugin-devops/eslint-plugin-myplugin",
+  "name": "eslint-plugin-myplugin",
   "version": "1.0.0",
   "description": "",
   "main": "./lib/index.js",
