@@ -1,0 +1,11 @@
+{
+  "@myplugin-devops/myplugin/layout": "warn",
+  "@myplugin-devops/myplugin/import-export": "warn",
+  "@myplugin-devops/myplugin/no-scss": "warn",
+  "@myplugin-devops/myplugin/no-lost-assets": "warn",
+  "@myplugin-devops/myplugin/variables": "warn",
+  "@myplugin-devops/myplugin/member-expressions": "warn",
+  "@myplugin-devops/myplugin/hooks": "warn",
+  "@myplugin-devops/myplugin/react": "warn",
+  "@myplugin-devops/myplugin/lingui": "warn"
+}

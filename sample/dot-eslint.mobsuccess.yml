@@ -1,0 +1,3 @@
+valid-hooks-in-ui-components:
+  - useI18n
+  - useResizeDetector

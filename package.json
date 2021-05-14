@@ -1,0 +1,58 @@
+{
+  "name": "@myplugin-devops/eslint-plugin-myplugin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./lib/index.js",
+  "scripts": {
+    "prettier": "npx prettier --check .",
+    "eslint": "eslint src",
+    "build": "tsc --build",
+    "test": "jest --coverage"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@babel/core": "^7.13.14",
+    "@babel/eslint-parser": "^7.13.14",
+    "@babel/plugin-syntax-jsx": "^7.12.13",
+    "@babel/preset-react": "^7.13.13",
+    "@trivago/prettier-plugin-sort-imports": "^2.0.2",
+    "@types/eslint": "^7.2.10",
+    "@types/estree": "0.0.47",
+    "@types/get-intrinsic": "^1.0.0",
+    "@types/jest": "^26.0.23",
+    "@types/node": "^15.0.1",
+    "eslint": "^7.23.0",
+    "jest": "^26.6.3",
+    "prettier": "2.2.1",
+    "ts-jest": "^26.5.6",
+    "typescript": "^4.2.4"
+  },
+  "dependencies": {
+    "@types/requireindex": "^1.2.0",
+    "get-intrinsic": "^1.1.1",
+    "typescript-natural-sort": "^0.7.2",
+    "yaml": "^1.10.2"
+  },
+  "jest": {
+    "coverageThreshold": {
+      "./lib/rules": {
+        "branches": 100,
+        "functions": 100,
+        "lines": 100,
+        "statements": 100
+      }
+    },
+    "transform": {
+      "^.+\\.(ts|tsx)$": "ts-jest"
+    },
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/old/",
+      "/__fixtures__/"
+    ]
+  }
+}
